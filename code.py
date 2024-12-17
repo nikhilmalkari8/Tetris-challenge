@@ -1,3 +1,12 @@
+#Explanation
+"""The code drops a Tetris piece by checking each possible row until it finds a position where the piece can fit without overlapping any existing blocks ('#'). 
+If a collision is detected, it moves the piece up by one row. 
+Once the position is found, the piece is placed on the grid by marking its cells with '#'. 
+After placing the piece, any fully filled rows are removed, and empty rows are added at the top to maintain the grid's height."""
+
+"Time Comoplexity and Space Complexity of the code will be O(1) since we have constant grid height and width"
+
+
 import sys
 
 shapes = {
